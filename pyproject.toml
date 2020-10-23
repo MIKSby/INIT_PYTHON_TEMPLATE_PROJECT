@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "PROJECT_NAME_TEMPLATE"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+packages = [
+    { include = "srv/checkers/run_hooks.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.790"
+pycodestyle = "^2.6.0"
+flake8 = "^3.8.4"
+pylint = "^2.6.0"
+safety = "^1.9.0"
+bandit = "^1.6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+init = "srv.checkers.run_hooks:init"
+lint = "srv.checkers.run_hooks:lint"
+pre_push = "srv.checkers.run_hooks:pre_push"
