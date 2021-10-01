@@ -11,12 +11,12 @@ packages = [
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.790"
-pycodestyle = "^2.6.0"
-flake8 = "^3.8.4"
-pylint = "^2.6.0"
-safety = "^1.9.0"
-bandit = "^1.6.2"
+mypy = "^0.910"
+pycodestyle = "^2.7.0"
+flake8 = "^3.9.2"
+pylint = "^2.11.1"
+safety = "^1.10.3"
+bandit = "^1.7.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
